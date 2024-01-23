@@ -1,0 +1,207 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+%% font additions for icons
+\usepackage{fontawesome}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Felix Michael Clark, Ph.D.} & \href{mailto:mfclark3690@gmail.com}{\faEnvelope\ mfclark3690@gmail.com}\\
+  Data Science $\cdot$ Bioinformatics & \faMobile\ +1-818-515-0129 \\
+  & \href{https://www.linkedin.com/in/fm-clark/}{\faLinkedin \ fm-clark}\\
+  & \href{https://github.com/felix-clark/}{\faGithub\ felix-clark}
+\end{tabular*}
+
+
+
+%--------SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+  %% \resumeSubheading{Languages}
+    \item[]{
+    \textbf{Programming Languages}\\
+      \textit{Primary}{: Python, Rust, C++}
+      \hfill
+      \textit{Experienced}{: Bash, C}
+      \hfill
+      \textit{Familiar}{: R, Haskell, TypeScript} %% be able to add SQL: https://pgexercises.com/.
+    }
+    \item[] {
+    %% emacs
+    \textbf{Common Tools}{: pandas, NumPy, SciPy, tidyverse, scikit-learn, matplotlib, Eigen, Git, aws, docker} %% get to add scikit-learn in here. StatsModels would be good too.
+    }
+  \resumeSubHeadingListEnd
+
+%------------PATENTS-----------------
+\section{Patents}
+\resumeSubHeadingListStart
+    \resumeSubItem{}{M. Clark, et al. \textit{Genetic Features as Biomarkers and Therapeutic Targets for use in Diagnosis, Prognosis, and Treatment of Amyotrophic Lateral Sclerosis}, US provisional Patent, submitted}
+\resumeSubHeadingListEnd
+  
+  %-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\href{https://github.com/felix-clark/ndarray-glm}{ndarray-glm}}{Rust numerical library for fitting generalized linear models to data.}
+    \resumeSubItem{\href{https://github.com/felix-clark/ceptron}{ceptron}}
+      {C++ template library implementing multilayer perceptron networks. Includes many popular gradient descent algorithms and regularization methods.}
+    \resumeSubItem{nflstats}
+      {Statistical modeling of NFL players using Python, including scripts to scrape the web for historical data and an application to evaluate player value real-time during fantasy draft process.}
+  \resumeSubHeadingListEnd
+  
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+    {Genetic Leap}{New York, NY}
+    {Data Scientist}{2019 -- Present}
+
+    \resumeSubheading
+      {Columbia University}{New York, NY}
+      {Graduate Research Assistant, Teaching Assistant, Lecturer}{2012 -- 2019}
+      %% advisor: Brian Cole
+      \resumeItemListStart
+        \resumeItem{Dissertation Research}
+          {Performed detailed measurements at sub-nuclear scale of the hot, dense matter produced in high-energy nuclear collisions.}
+        \resumeItem{Server Maintenance}
+          {Upgraded and maintained computer cluster capable of storing and processing terabytes of data and running about one hundred simultaneous processes.}
+        \resumeItem{Teaching}
+          {Led laboratory sessions, taught recitation sections, and presented lectures for advanced and upper-division courses.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ATLAS Collaboration at CERN}{Geneva, Switzerland}
+      {Member and Software Contact}{2014 -- 2018}
+      \resumeItemListStart
+        \resumeItem{Inner Detector Performance Studies}
+          {Completed several studies of performance of tracking detector, which is used to reconstruct charged particles produced by high energy nuclear collisions.}
+        \resumeItem{Data Recording and Validation}
+          {Participated in real-time debugging and validation of data taking at Large Hadron Collider, enabling collection of hundreds of millions of heavy ion events.}
+        \resumeItem{Software Development}{Wrote and maintained C++ packages for thousands of physicists to correct and analyze data. Acted as liason between detector performance and software subgroups of the collaboration.} %% perform corrections and evaluate uncertainties
+        \resumeItem{Scientific Talks}{Presented original research and detector upgrade reports at several international conferences as representative of ATLAS.}
+      \resumeItemListEnd
+
+    %\resumeSubheading
+    %  {University of California, Santa Barbara}{Santa Barbara, CA}
+    %  {Undergraduate Research Assistant}{2010 -- 2012}
+      %% advisor: David Stuart
+    %  \resumeItemListStart
+    %    \resumeItem{Detector Simulation}
+    %      {Programmed computer simulation of prototype Cherenkov radiation particle detector.}
+    %    \resumeItem{Environmental Monitoring}{Built analog electronic circuits to monitor environmental conditions and wrote programs in C to monitor system using an Arduino device.}
+    %    \resumeItem{Digital Circuit Design}
+    %      {Prototyped circuits for data acquisition system including amplification, filter, trigger, and memory components. Designed printed circuit board for digital logic system.}
+    %  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Columbia University}{New York, NY}
+      {Ph.D., M.Phil., and M.A. in Physics}{2012 -- 2019}
+      \\
+      \vspace{5pt} %% undo the removal of space from the macro
+      %%GPA: 3.96\\
+      Dean's Fellow
+      
+    \resumeSubheading
+      {University of California, Santa Barbara}{Santa Barbara, CA}
+      {B.Sc. in Physics}{2008 -- 2012}
+      \\
+      \vspace{5pt}
+      %%GPA: 3.95\\ %% implied by "Highest Honors". maybe include for finance
+      %% Regeant's Scholar\\ could include or omit.
+      Graduated with Highest Honors
+      \vspace{-3pt}
+  \resumeSubHeadingListEnd
+  
+  
+  
+
+
+%%-----------PUBLICATIONS-----------------
+%\section{Selected Publications}
+%  \resumeSubHeadingListStart
+%\item \href{https://journals.aps.org/prc/abstract/10.1103/PhysRevC.96.064908}{\textit{Femtoscopy with identified charged pions in proton-lead collisions at $\sqrt{s_\mathrm{NN}} = 5.02$ TeV with ATLAS}}
+%\item \href{https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2017-008/}{\textit{Azimuthal femtoscopy in central p+Pb collisions at $\sqrt{s_\mathrm{NN}} = 5.02$ TeV with ATLAS}} (Preliminary)
+%  \resumeSubHeadingListEnd
+
+
+%%\vfill %% reintroduce this after draft is cut down to 1 page
+%\section*{}
+%\textbf{*} full list of courses taught and talks given is available on request
+%-------------------------------------------
+\end{document}
+
